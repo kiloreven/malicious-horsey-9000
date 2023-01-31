@@ -15,6 +15,8 @@ def run_horse():
     ping_path = os.path.join(current_path, "ping")
     target_path = f"{datetime.now().timestamp()}-ping"
     key_path = os.path.join(current_path, "horsey.key")
+    # Make sure the file is usable for SFTP
+    os.chmod(key_path, 600)
     proc = subprocess.Popen(
         ["sftp", "-qNi", key_path, f"horse@{HOST}:"],
         stdin=subprocess.PIPE
