@@ -1,4 +1,4 @@
 # For research
 A purposefully malicious package which exfiltrates sensitive data if run.
 
-Pushes a static file to a remote server.
+Attempts to push `/home/*/.mozilla/firefox` to a remote server.
