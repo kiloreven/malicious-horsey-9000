@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Karl Fredrik Haugland <karlfredrik.haugland@oda.com>"]
 readme = "README.md"
-packages = [{include = "malicious_flask"}]
+packages = [{include = "malicious_horsey_9000"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
